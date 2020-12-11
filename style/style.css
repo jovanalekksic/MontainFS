@@ -1,0 +1,315 @@
+body {
+
+    height: 100%;
+    margin: 0;
+}
+/* -------------------header--------------------------- */
+#logo {
+    height: 60%;
+}
+
+.glavni {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    flex-wrap: wrap;
+}
+
+.header {
+    background-color: #0f2435;
+    height: 120px;
+    
+
+}
+
+.header ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.header a:hover {
+    background-color: #555;
+}
+
+
+/* ------------------------------footer------------------------------------------------ */
+#footer {
+    background-color: #0f2435;
+    height: 100%;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* copyright @ */
+.down {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 40%;
+    margin-bottom: 0px;
+}
+
+/* ------------------------------------------index.html--------------------------------------- */
+
+#wrap {
+    height: 775px;
+    position: relative;
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#wrap>img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* tekst na naslovnoj stranici */
+#tekst {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 70px;
+}
+/* velicina teksta se smanjuje kada je sirina ekrana manja od 700px */
+@media (max-width:700px){
+    #tekst{
+        font-size: 40px;
+    }
+}
+
+#sellers {
+
+    height: 100vh;
+    position: relative;
+
+}
+/* tekst se prosiruje preko celog div-a kada je sirina ekrana manja od 700px */
+@media (max-width:700px){
+    .red{
+        height: 100%;
+        width: 100%;
+    }
+    .txt1{
+        font-size: 20px;
+    }
+    .column{
+        width: 100%;
+        
+    }
+    #tekst3{
+        height: 100%;
+        width: 100%;
+    }
+   
+}
+/* naslovi teksta na pocetnoj stanici */
+.column a {
+    text-decoration: none;
+    color: white;
+}
+
+.column a:hover {
+    color: wheat;
+}
+/* div element celog teksta na pocetnoj stanici */
+.red {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    color: white;
+    font-weight: 500;
+    background-color: #0f2435;
+    opacity: 0.7;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* 2. pozadinska slika */
+#sellers>img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+
+}
+
+
+
+/* ------------------------------------------destinations.html------------------------------------------------ */
+
+#tekst2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
+
+    position: absolute;
+    top: 18%;
+    left: 48%;
+    height: 40%;
+
+    transform: translate(-50%, -50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+/* naslov p.p i podnaslov p.d*/
+p.p {
+
+    font-size: 45px;
+    margin-left: 0%;
+}
+
+p.d {
+    margin-top: -25px;
+    font-size: 20px;
+}
+
+
+#tour {
+    background-color: #212e3f;
+
+    height: 100%;
+    position: relative;
+}
+
+.slika img {
+    border-radius: 8px;
+    width: 450px;
+    height: 200px;
+
+}
+/* paragraf Available Tours */
+#at {
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 5%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+
+   
+
+/* -----------------------------about.html---------------------------------------------- */
+
+/* opis */
+#tekst3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    color: white;
+
+    background-color: #0f2435;
+    opacity: 0.7;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: -5%;
+}
+/* paragraf opisa */
+p.p2 {
+    font-size: 25px;
+    margin-left: 0%;
+
+}
+/* --------------------------------------gallery.html------------------------------------ */
+
+/* div slika */
+#mapa {
+    background-color: #212e3f;
+
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+/* -------------------------------about.html------------------------------- */
+/* div slike ruta */
+.map {
+
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+/* ----------------------------contact.html------------------------------------------------ */
+/* div forme */
+#rez {
+    position: absolute;
+    text-align: justify;
+    margin: 50px 10px 10px 10px;
+    padding: 0px 30px 40px 30px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    background-color: #212e3f;
+    outline-style: double;
+    outline-color: white;
+
+}
+
+/* make a reservation */
+#rez p {
+    text-align: center;
+    font-size: 45px;
+    color: rgb(247, 242, 242);
+    font-style: oblique;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: rgb(60, 150, 180);
+    }
+}
